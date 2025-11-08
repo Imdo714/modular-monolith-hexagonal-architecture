@@ -1,0 +1,10 @@
+rootProject.name = 'modular-study'
+
+include(
+        'app',
+        'member',
+        'order',
+        'product',
+        'payment',
+        'gateway'
+)

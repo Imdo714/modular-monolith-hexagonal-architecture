@@ -1,0 +1,18 @@
+plugins {
+
+}
+
+dependencies {
+    implementation project(':order')
+    implementation project(':member')
+    implementation project(':payment')
+    implementation project(':product')
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform() // JUnit5 사용
+}
