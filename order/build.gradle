@@ -3,7 +3,9 @@ plugins {
 }
 
 dependencies {
-    implementation project(':gateway')
+    implementation project(':common')
+    implementation project(':member')
+    implementation project(':product')
 
     implementation 'org.springframework.boot:spring-boot-starter'
 

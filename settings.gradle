@@ -6,5 +6,5 @@ include(
         'order',
         'product',
         'payment',
-        'gateway'
+        'common'
 )

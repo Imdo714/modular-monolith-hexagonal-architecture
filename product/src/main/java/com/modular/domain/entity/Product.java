@@ -7,10 +7,10 @@ import java.util.UUID;
 @Getter
 public class Product {
 
-    private final String id;
-    private final String name;
-    private final int price;
-    private final int stock;
+    private String id;
+    private String name;
+    private int price;
+    private int stock;
 
     public Product(String name, int price, int stock) {
         this.id = UUID.randomUUID().toString();
@@ -19,5 +19,11 @@ public class Product {
         this.stock = stock;
     }
 
+    public void decreaseStock(int quantity) {
+        if (this.stock < quantity) {
+            throw new IllegalArgumentException("재고가 부족합니다.");
+        }
+        this.stock -= quantity;
+    }
 
 }

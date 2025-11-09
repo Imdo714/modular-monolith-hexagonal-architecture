@@ -3,6 +3,8 @@ plugins {
 }
 
 dependencies {
+    implementation project(':common')
+//    implementation project(':order')
 
     implementation 'org.springframework.boot:spring-boot-starter'
 }

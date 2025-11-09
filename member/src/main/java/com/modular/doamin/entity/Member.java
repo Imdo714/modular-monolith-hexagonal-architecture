@@ -1,14 +1,16 @@
 package com.modular.doamin.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.UUID;
 
 @Getter
+@AllArgsConstructor
 public class Member {
-    private final String id;
-    private final String name;
-    private final String email;
+    private String id;
+    private String name;
+    private String email;
 
     public Member(String name, String email) {
         this.id = UUID.randomUUID().toString();
