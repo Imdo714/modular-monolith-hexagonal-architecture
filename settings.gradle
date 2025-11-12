@@ -2,9 +2,20 @@ rootProject.name = 'modular-study'
 
 include(
         'app',
-        'member',
-        'order',
-        'product',
-        'payment',
-        'common'
+        'common',
+
+        'members:members-api',
+        'members:members-domain',
+        'members:members-service',
+        'members:members-infrastructure',
+
+        'orders:orders-api',
+        'orders:orders-domain',
+        'orders:orders-service',
+        'orders:orders-infrastructure',
+
+        'products:products-api',
+        'products:products-domain',
+        'products:products-service',
+        'products:products-infrastructure',
 )

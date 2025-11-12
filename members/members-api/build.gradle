@@ -1,0 +1,9 @@
+plugins {
+
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':members:members-domain')
+    implementation 'org.springframework.boot:spring-boot-starter'
+}

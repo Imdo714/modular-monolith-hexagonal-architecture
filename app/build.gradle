@@ -3,10 +3,18 @@ plugins {
 }
 
 dependencies {
-    implementation project(':order')
-    implementation project(':member')
-    implementation project(':payment')
-    implementation project(':product')
+    implementation project(':orders:orders-api')
+    implementation project(':orders:orders-domain')
+    implementation project(':orders:orders-service')
+
+    implementation project(':members:members-api')
+    implementation project(':members:members-domain')
+    implementation project(':members:members-service')
+
+    implementation project(':products:products-api')
+    implementation project(':products:products-domain')
+    implementation project(':products:products-service')
+
 
     implementation 'org.springframework.boot:spring-boot-starter'
 
