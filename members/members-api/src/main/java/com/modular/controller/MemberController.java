@@ -19,8 +19,8 @@ public class MemberController {
         return ResponseEntity.ok(memberUseCase.registerMember(createMemberDto));
     }
 
-    @GetMapping("/test")
-    public ResponseEntity<MemberInfo> getMember() {
-        return ResponseEntity.ok(memberUseCase.getMemberInfo());
+    @GetMapping("/{memberId}")
+    public ResponseEntity<MemberInfo> getMember(@PathVariable String memberId) {
+        return ResponseEntity.ok(memberUseCase.getMemberById(memberId));
     }
 }

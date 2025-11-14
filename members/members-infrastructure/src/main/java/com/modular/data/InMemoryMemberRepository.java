@@ -14,8 +14,9 @@ public class InMemoryMemberRepository implements MemberRepository {
     private final Map<String, Member> data = new ConcurrentHashMap<>();
 
     @Override
-    public void save(Member member) {
+    public Member save(Member member) {
         data.put(Objects.requireNonNull(member).getId(), member);
+        return member;
     }
 
     @Override

@@ -4,9 +4,9 @@ import com.modular.dto.member.MemberInfo;
 import com.modular.dto.request.CreateMemberDto;
 
 public interface MemberUseCase { // Member-api-Modular
-    void callMember();
+    // 내부에서 내부 호춣하는 인터페이스
 
-    MemberInfo getMemberInfo();
+    MemberInfo getMemberById(String memberId);
 
     MemberInfo registerMember(CreateMemberDto createMemberDto);
 }
