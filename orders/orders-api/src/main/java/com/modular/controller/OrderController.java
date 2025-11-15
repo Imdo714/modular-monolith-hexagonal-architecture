@@ -1,12 +1,12 @@
 package com.modular.controller;
 
+import com.modular.dto.request.CreateOrderDto;
+import com.modular.dto.response.OrderInfoResponse;
 import com.modular.port.OrdersUseCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -16,10 +16,10 @@ public class OrderController { // Order-api-Modular
 
     private final OrdersUseCase ordersUseCase;
 
-    @GetMapping("/test")
-    public ResponseEntity<String> getOrders() {
-        log.info("getOrders");
-        ordersUseCase.createOrder();
-        return ResponseEntity.ok("Orders created");
+    @PostMapping
+    public ResponseEntity<OrderInfoResponse> getOrders(@RequestBody CreateOrderDto createOrderDto) {
+        return ResponseEntity.ok(ordersUseCase.createOrder(createOrderDto));
     }
+
+
 }

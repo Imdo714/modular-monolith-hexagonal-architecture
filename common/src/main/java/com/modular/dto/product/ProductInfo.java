@@ -9,4 +9,5 @@ public class ProductInfo {
     private String productId;
     private String name;
     private int price;
+    private int stock;
 }

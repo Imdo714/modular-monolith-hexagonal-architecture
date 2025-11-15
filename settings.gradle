@@ -6,16 +6,14 @@ include(
 
         'members:members-api',
         'members:members-domain',
-        'members:members-service',
-        'members:members-infrastructure',
+        'members:members-application',
 
         'orders:orders-api',
         'orders:orders-domain',
-        'orders:orders-service',
-        'orders:orders-infrastructure',
+        'orders:orders-application',
 
         'products:products-api',
         'products:products-domain',
-        'products:products-service',
-        'products:products-infrastructure',
+        'products:products-application',
+
 )

@@ -1,0 +1,10 @@
+plugins {
+
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':products:products-api')
+    implementation project(':products:products-domain')
+
+}

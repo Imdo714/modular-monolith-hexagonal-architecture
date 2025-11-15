@@ -10,6 +10,10 @@ allprojects {
     repositories { mavenCentral() }
 }
 
+tasks.named('bootJar') {
+    mainClass.set("com.modular.EcommerceApplication")
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'
@@ -20,6 +24,17 @@ subprojects {
 
     repositories {
         mavenCentral()
+    }
+
+    afterEvaluate { project ->
+        if (!project.plugins.hasPlugin('org.springframework.boot')) return
+
+        // app 모듈 제외하고 나머지 bootJar 비활성화
+        if (project.name != 'app') {
+            tasks.named('bootJar') {
+                enabled = false
+            }
+        }
     }
 
     dependencies {
