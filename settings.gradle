@@ -7,13 +7,16 @@ include(
         'members:members-api',
         'members:members-domain',
         'members:members-application',
+        'members:members-infrastructure',
 
         'orders:orders-api',
         'orders:orders-domain',
         'orders:orders-application',
+        'orders:orders-infrastructure',
 
         'products:products-api',
         'products:products-domain',
         'products:products-application',
+        'products:products-infrastructure',
 
 )

@@ -15,14 +15,17 @@
             <option value="$PROJECT_DIR$/members/members-api" />
             <option value="$PROJECT_DIR$/members/members-application" />
             <option value="$PROJECT_DIR$/members/members-domain" />
+            <option value="$PROJECT_DIR$/members/members-infrastructure" />
             <option value="$PROJECT_DIR$/orders" />
             <option value="$PROJECT_DIR$/orders/orders-api" />
             <option value="$PROJECT_DIR$/orders/orders-application" />
             <option value="$PROJECT_DIR$/orders/orders-domain" />
+            <option value="$PROJECT_DIR$/orders/orders-infrastructure" />
             <option value="$PROJECT_DIR$/products" />
             <option value="$PROJECT_DIR$/products/products-api" />
             <option value="$PROJECT_DIR$/products/products-application" />
             <option value="$PROJECT_DIR$/products/products-domain" />
+            <option value="$PROJECT_DIR$/products/products-infrastructure" />
           </set>
         </option>
       </GradleProjectSettings>
