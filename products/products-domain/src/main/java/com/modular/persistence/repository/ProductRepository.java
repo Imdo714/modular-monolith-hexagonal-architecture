@@ -1,4 +1,4 @@
-package com.modular.repository;
+package com.modular.persistence.repository;
 
 import com.modular.entity.Product;
 

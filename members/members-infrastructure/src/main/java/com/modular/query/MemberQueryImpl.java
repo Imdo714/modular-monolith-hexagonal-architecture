@@ -2,7 +2,8 @@ package com.modular.query;
 
 import com.modular.dto.member.MemberInfo;
 import com.modular.entity.Member;
-import com.modular.repository.MemberRepository;
+import com.modular.persistence.query.MemberQuery;
+import com.modular.persistence.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

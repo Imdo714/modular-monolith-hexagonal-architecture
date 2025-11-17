@@ -2,8 +2,8 @@ package com.modular.controller;
 
 import com.modular.dto.request.CreateOrderDto;
 import com.modular.dto.response.OrderInfoResponse;
-import com.modular.port.command.OrderCommandUseCase;
-import com.modular.port.internal.OrdersUseCase;
+import com.modular.port.internal.command.OrderCommandUseCase;
+import com.modular.port.internal.query.OrdersUseCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

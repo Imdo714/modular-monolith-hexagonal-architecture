@@ -1,7 +1,7 @@
 package com.modular.memory;
 
 import com.modular.entity.Product;
-import com.modular.repository.ProductRepository;
+import com.modular.persistence.repository.ProductRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Map;

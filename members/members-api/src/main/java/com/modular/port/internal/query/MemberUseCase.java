@@ -1,4 +1,4 @@
-package com.modular.port.internal;
+package com.modular.port.internal.query;
 
 import com.modular.dto.member.MemberInfo;
 import com.modular.dto.order.OrderHistoryDto;

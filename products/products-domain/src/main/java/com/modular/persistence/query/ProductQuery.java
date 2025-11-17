@@ -1,4 +1,4 @@
-package com.modular.query;
+package com.modular.persistence.query;
 
 import com.modular.dto.product.ProductInfo;
 import com.modular.entity.Product;

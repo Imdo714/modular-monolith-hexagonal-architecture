@@ -3,9 +3,9 @@ package com.modular.service.command;
 import com.modular.dto.member.MemberInfo;
 import com.modular.dto.request.CreateMemberDto;
 import com.modular.entity.Member;
-import com.modular.repository.MemberRepository;
-import com.modular.port.command.MemberCommandUseCase;
-import com.modular.query.MemberQuery;
+import com.modular.persistence.repository.MemberRepository;
+import com.modular.port.internal.command.MemberCommandUseCase;
+import com.modular.persistence.query.MemberQuery;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

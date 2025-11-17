@@ -1,7 +1,7 @@
 package com.modular.memory;
 
 import com.modular.entity.Member;
-import com.modular.repository.MemberRepository;
+import com.modular.persistence.repository.MemberRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Map;

@@ -2,7 +2,7 @@ package com.modular.service.external;
 
 import com.modular.dto.order.OrderHistoryDto;
 import com.modular.entity.Order;
-import com.modular.repository.OrderRepository;
+import com.modular.persistence.repository.OrderRepository;
 import com.modular.port.external.ExternalOrderUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

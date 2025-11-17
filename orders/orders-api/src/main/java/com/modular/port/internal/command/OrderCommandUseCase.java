@@ -1,4 +1,4 @@
-package com.modular.port.command;
+package com.modular.port.internal.command;
 
 import com.modular.dto.request.CreateOrderDto;
 import com.modular.dto.response.OrderInfoResponse;

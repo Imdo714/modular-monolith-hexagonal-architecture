@@ -2,9 +2,9 @@ package com.modular.service.external;
 
 import com.modular.dto.product.ProductInfo;
 import com.modular.entity.Product;
-import com.modular.repository.ProductRepository;
+import com.modular.persistence.repository.ProductRepository;
 import com.modular.port.external.ExternalProductUseCase;
-import com.modular.query.ProductQuery;
+import com.modular.persistence.query.ProductQuery;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

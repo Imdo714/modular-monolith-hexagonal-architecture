@@ -1,4 +1,4 @@
-package com.modular.port.command;
+package com.modular.port.internal.command;
 
 import com.modular.dto.member.MemberInfo;
 import com.modular.dto.request.CreateMemberDto;

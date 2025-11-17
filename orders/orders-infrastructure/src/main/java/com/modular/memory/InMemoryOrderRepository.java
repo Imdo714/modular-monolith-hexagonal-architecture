@@ -1,7 +1,7 @@
 package com.modular.memory;
 
 import com.modular.entity.Order;
-import com.modular.repository.OrderRepository;
+import com.modular.persistence.repository.OrderRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

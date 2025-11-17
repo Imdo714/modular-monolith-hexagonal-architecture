@@ -3,9 +3,9 @@ package com.modular.service.command;
 import com.modular.dto.product.ProductInfo;
 import com.modular.dto.request.CreateProductDto;
 import com.modular.entity.Product;
-import com.modular.repository.ProductRepository;
-import com.modular.port.command.ProductCommandUseCase;
-import com.modular.query.ProductQuery;
+import com.modular.persistence.repository.ProductRepository;
+import com.modular.port.internal.command.ProductCommandUseCase;
+import com.modular.persistence.query.ProductQuery;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

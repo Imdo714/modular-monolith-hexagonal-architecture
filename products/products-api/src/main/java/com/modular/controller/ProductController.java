@@ -2,8 +2,8 @@ package com.modular.controller;
 
 import com.modular.dto.product.ProductInfo;
 import com.modular.dto.request.CreateProductDto;
-import com.modular.port.command.ProductCommandUseCase;
-import com.modular.port.internal.ProductUseCase;
+import com.modular.port.internal.command.ProductCommandUseCase;
+import com.modular.port.internal.query.ProductUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

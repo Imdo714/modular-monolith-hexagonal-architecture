@@ -4,7 +4,7 @@ import com.modular.dto.member.MemberInfo;
 import com.modular.dto.order.OrderHistoryDto;
 import com.modular.entity.Member;
 import com.modular.port.out.OrderPort;
-import com.modular.query.MemberQuery;
+import com.modular.persistence.query.MemberQuery;
 import com.modular.service.internal.MemberServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
