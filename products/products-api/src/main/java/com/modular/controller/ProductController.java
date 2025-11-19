@@ -6,10 +6,7 @@ import com.modular.port.internal.command.ProductCommandUseCase;
 import com.modular.port.internal.query.ProductUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,6 +19,11 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<ProductInfo> save(@RequestBody CreateProductDto createMemberDto) {
         return ResponseEntity.ok(productCommandUseCase.createProduct(createMemberDto));
+    }
+
+    @GetMapping("/{productId}")
+    public ResponseEntity<ProductInfo> getProduct(@PathVariable String productId) {
+        return ResponseEntity.ok(productUseCase.getProductById(productId));
     }
 
 }

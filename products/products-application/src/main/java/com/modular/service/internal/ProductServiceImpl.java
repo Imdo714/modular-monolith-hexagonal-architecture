@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductUseCase {
 
-    private final ProductRepository productRepository;
     private final ProductQuery productQuery;
 
     @Override
